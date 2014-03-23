@@ -1,0 +1,80 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; updatepoints = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {updatepoints = id; }; 
+            CLASS = MyDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {rotView = id; textView = id; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {CLASS = MySound; LANGUAGE = ObjC; SUPERCLASS = Sound; }, 
+        {
+            ACTIONS = {
+                setCenter = id; 
+                setChirality = id; 
+                setDefaults = id; 
+                setFPS = id; 
+                setInvert = id; 
+                setLineWidth = id; 
+                setPerspective = id; 
+                setPointWidth = id; 
+                setStereoAngle = id; 
+                setStereoType = id; 
+                setTrackball = id; 
+                setUpDirection = id; 
+                togglePrefs = id; 
+                toggleStereo = id; 
+                toggleText = id; 
+            }; 
+            CLASS = RotWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                conCenter = id; 
+                conChirality = id; 
+                conFPS = id; 
+                conInvert = id; 
+                conLineWidth = id; 
+                conPerspective = id; 
+                conPointWidth = id; 
+                conStereoAngle = id; 
+                conStereoType = id; 
+                conTrackball = id; 
+                conUpDirection = id; 
+                conUpDirectionX = id; 
+                conUpDirectionY = id; 
+                conUpDirectionZ = id; 
+                mainWindow = id; 
+                prefDrawer = id; 
+                rotView = id; 
+                stereoDrawer = id; 
+                textDrawer = id; 
+                textView = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {
+            ACTIONS = {
+                centerObject = id; 
+                invertObject = id; 
+                resetObject = id; 
+                setChirality = id; 
+                setFPS = id; 
+                setLineWidth = id; 
+                setPointWidth = id; 
+                setTrackball = id; 
+                setUpDirection = id; 
+            }; 
+            CLASS = RotaterView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {fixFPS = id; fixLineWidth = id; myOutlet = id; }; 
+            SUPERCLASS = NSView; 
+        }
+    ); 
+    IBVersion = 1; 
+}
