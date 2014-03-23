@@ -94,8 +94,11 @@
 				19C28FB0FE9D524F11CA2CBB /* Products */,
 				447113880A70D1000061BBE2 /* Info-Rotater.plist */,
 			);
+			indentWidth = 2;
 			name = Rotater;
 			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
 		};
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
