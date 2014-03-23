@@ -92,9 +92,29 @@
 
 //######################################################################################//
 
-- (BOOL)readFromFile:(NSString *)fileName ofType:(NSString *)type { // read text file
-  fileContents = [NSString stringWithContentsOfFile:fileName];
-  return YES;
+- (BOOL)readFromData:(NSData *)data
+              ofType:(NSString *)typeName
+               error:(NSError **)outError
+{
+  // Read text as UTF-8.
+  fileContents = [[NSString alloc] initWithData:data
+                                       encoding:NSUTF8StringEncoding];
+  
+  if (fileContents != nil) {
+    // Fall back to MacRoman.
+    fileContents = [[NSString alloc] initWithData:data
+                                         encoding:NSMacOSRomanStringEncoding];
+  }
+  
+  if (fileContents != nil) {
+    return YES;
+  }
+  else {
+    *outError = [NSError errorWithDomain:NSCocoaErrorDomain
+                                    code:NSFileReadCorruptFileError
+                                userInfo:nil];
+    return NO;
+  }
 }
 
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController { // load text
@@ -111,9 +131,12 @@
 
 //######################################################################################//
 
-- (BOOL)writeToFile:(NSString *)fileName ofType:(NSString *)type { //save to text file
-  [[textView string] writeToFile:fileName atomically:YES];
-  return YES;
+- (NSData *)dataOfType:(NSString *)typeName
+                 error:(NSError **)outError;
+{
+  // Save to text.
+  NSData *data = [[textView string] dataUsingEncoding:NSUTF8StringEncoding];
+  return data;
 }
 
 //######################################################################################//

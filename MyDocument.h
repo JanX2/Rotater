@@ -16,8 +16,6 @@
   RotWindowController *rotController;
 }
 
-- (BOOL)readFromFile:(NSString *)fileName ofType:(NSString *)type;
-- (BOOL)writeToFile:(NSString *)fileName ofType:(NSString *)type;
 - (void)scanText:(NSString *)string;
 
 - (IBAction)updatepoints:(id)sender;
