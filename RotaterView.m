@@ -26,10 +26,10 @@
 //######################################################################################//
 
 - (void)drawRect:(NSRect)rect {
-  long i, aCom, j, k, C, pos, x, y;
+  long i, aCom, j, k, C, /*pos, */x, y;
   long XX, XXold=0, YY, YYold=0, DD, DDold=0;
   NSPoint zero;
-  double X, Y, Z, X3, Y3, Z3, X32, Y32, Z32, wzoom, T;
+  double X, Y, Z, X3, Y3, Z3, /*X32, Y32, Z32, */wzoom, T;
   double  mWidth, mHeight;
   NSRect viewBounds = [self bounds];
   double tempPerspec;
@@ -80,8 +80,8 @@
 	
   [rotImage addRepresentation:rotBitMap]; // FAILS #########################
   
-	mWidth = 10;
-	mWidth = 10;
+	//mWidth = 10;
+	//mWidth = 10;
 	
 	mWidth  = NSMidX (viewBounds);
 	mHeight = NSMidY (viewBounds);
@@ -173,7 +173,7 @@ if (rotStereoType == 0) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -207,7 +207,7 @@ if (rotStereoType == 0) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y*rotRowBytes;
+                  //pos = i*3 + y*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -247,7 +247,7 @@ if (rotStereoType == 0) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -285,7 +285,7 @@ if (rotStereoType == 0) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y1*rotRowBytes;
+                  //pos = i*3 + y1*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -318,7 +318,7 @@ if (rotStereoType == 0) {
           for (z=wWidth*y+x,i=0;i<rotDotWidth;i++)
             if (x+i < wWidth && x+i >= 0 && DD >= zBuffer[z+i]) {
               zBuffer[z+i] = DD;
-              pos = (x+i)*3 + y*rotRowBytes;
+              //pos = (x+i)*3 + y*rotRowBytes;
               //rotBitMapData[pos] = R;
               //rotBitMapData[pos+1] = G;
               //rotBitMapData[pos+2] = B;
@@ -473,7 +473,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -509,7 +509,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y*rotRowBytes;
+                  //pos = i*3 + y*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -547,7 +547,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -585,7 +585,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y1*rotRowBytes;
+                  //pos = i*3 + y1*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -618,7 +618,7 @@ if (rotStereoType == 1) {
           for (z=wWidth*y+x,i=0;i<rotDotWidth;i++)
             if (x+i < wWidth && x+i >= 0 && DD >= zBuffer[z+i]) {
               zBuffer[z+i] = DD;
-              pos = (x+i)*3 + y*rotRowBytes;
+              //pos = (x+i)*3 + y*rotRowBytes;
               //rotBitMapData[pos] = R;
               //rotBitMapData[pos+1] = G;
               //rotBitMapData[pos+2] = B;
@@ -725,7 +725,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -760,7 +760,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y*rotRowBytes;
+                  //pos = i*3 + y*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -800,7 +800,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -837,7 +837,7 @@ if (rotStereoType == 1) {
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
                   RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y1*rotRowBytes;
+                  //pos = i*3 + y1*rotRowBytes;
                   //rotBitMapData[pos] = RR;
                   //rotBitMapData[pos+1] = GG;
                   //rotBitMapData[pos+2] = BB;
@@ -871,7 +871,7 @@ if (rotStereoType == 1) {
           for (z=wWidth*y+x,i=0;i<rotDotWidth;i++)
             if (x+i < wWidth && x+i >= 0 && DD >= zBuffer[z+i]) {
               zBuffer[z+i] = DD;
-              pos = (x+i)*3 + y*rotRowBytes;
+              //pos = (x+i)*3 + y*rotRowBytes;
               //rotBitMapData[pos] = R;
               //rotBitMapData[pos+1] = G;
               //rotBitMapData[pos+2] = B;
@@ -957,9 +957,9 @@ if (rotStereoType == 2 || rotStereoType == 3) {
     Y3 = DN * X + EN * Y + FN * Z;
     Z3 = GN * X + HN * Y + IN * Z;
     
-    X32 = AN2 * X + BN2 * Y + CN2 * Z;
-    Y32 = DN2 * X + EN2 * Y + FN2 * Z;
-    Z32 = GN2 * X + HN2 * Y + IN2 * Z;
+    //X32 = AN2 * X + BN2 * Y + CN2 * Z;
+    //Y32 = DN2 * X + EN2 * Y + FN2 * Z;
+    //Z32 = GN2 * X + HN2 * Y + IN2 * Z;
     
     colDepth = (Y3+1)/2.0*0.8+0.2;
     DD = (Y3 + 1)/2*255;
@@ -973,6 +973,7 @@ if (rotStereoType == 2 || rotStereoType == 3) {
     XX = mWidth  + X3*zoom*wzoom;
     YY = mHeight - Z3*zoom*wzoom;
     
+#if 0
     switch (abs(C)) { // Set Basic Color
       case 1: R=255; G=0; B=0; break; //red
       case 2: R=0; G=255; B=0; break; //green
@@ -983,6 +984,7 @@ if (rotStereoType == 2 || rotStereoType == 3) {
       case 7:
       default: R=255; G=255; B=255; break; //white
     }
+#endif
 
     if (C > 0) { // Draw Line - there be dragons in this code
       long xi, yi, ui;
@@ -990,7 +992,7 @@ if (rotStereoType == 2 || rotStereoType == 3) {
       long ughy=0,ddx,ddy,line=rotLineWidth,halfline=(line>>1);
       int r, dx, dy;
       Byte *cplane;
-      Byte *plane, RR, GG, BB;
+      Byte *plane/*, RR, GG, BB*/;
       long x1, y1, ughx, ugh1x;
       
       x = XX; y = YY; x1 = XXold; y1 = YYold; ughx = DD; ugh1x = DDold;
@@ -1020,8 +1022,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   *cplane = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = 255*colDepth;
                   //rotBitMapData[pos+1] = 0;
                   //rotBitMapData[pos+2] = 0;
@@ -1054,8 +1056,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   cplane[i] = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = i*3 + y*rotRowBytes;
                   //rotBitMapData[pos] = 255*colDepth;
                   //rotBitMapData[pos+1] = 0;
                   //rotBitMapData[pos+2] = 0;
@@ -1093,8 +1095,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   *cplane = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = x*3 + i*rotRowBytes;
                   //rotBitMapData[pos] = 255*colDepth;
                   //rotBitMapData[pos+1] = 0;
                   //rotBitMapData[pos+2] = 0;
@@ -1131,8 +1133,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   cplane[i] = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y1*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = i*3 + y1*rotRowBytes;
                   //rotBitMapData[pos] = 255*colDepth;
                   //rotBitMapData[pos+1] = 0;
                   //rotBitMapData[pos+2] = 0;
@@ -1159,13 +1161,13 @@ if (rotStereoType == 2 || rotStereoType == 3) {
       long z;
       x = XX - (rotDotWidth >> 1);
       y = YY - (rotDotWidth >> 1);
-      R *= colDepth; G *= colDepth; B *= colDepth;
+      /*R *= colDepth; G *= colDepth; B *= colDepth;*/
       for (j=0;j<rotDotWidth;j++,y++) 
         if(y < wHeight && y >= 0)
           for (z=wWidth*y+x,i=0;i<rotDotWidth;i++)
             if (x+i < wWidth && x+i >= 0 && DD >= zBuffer[z+i]) {
               zBuffer[z+i] = DD;
-              pos = (x+i)*3 + y*rotRowBytes;
+              //pos = (x+i)*3 + y*rotRowBytes;
 			  //rotBitMapData[pos] = 255*colDepth;
 			  //rotBitMapData[pos+1] = 0;
 			  //rotBitMapData[pos+2] = 0;
@@ -1221,6 +1223,7 @@ if (rotStereoType == 2 || rotStereoType == 3) {
     XX = mWidth  + X3*zoom*wzoom;
     YY = mHeight - Z3*zoom*wzoom;
     
+#if 0
     switch (abs(C)) { // Set Basic Color
       case 1: R=255; G=0; B=0; break; //red
       case 2: R=0; G=255; B=0; break; //green
@@ -1231,14 +1234,15 @@ if (rotStereoType == 2 || rotStereoType == 3) {
       case 7:
       default: R=255; G=255; B=255; break; //white
     }
-
+#endif
+    
     if (C > 0) { // Draw Line - there be dragons in this code
       long xi, yi, ui;
       long LWwidth=wWidth, LWheight=wHeight;
       long ughy=0,ddx,ddy,line=rotLineWidth,halfline=(line>>1);
       int r, dx, dy;
       Byte *cplane;
-      Byte *plane, RR, GG, BB;
+      Byte *plane/*, RR, GG, BB*/;
       long x1, y1, ughx, ugh1x;
       
       x = XX; y = YY; x1 = XXold; y1 = YYold; ughx = DD; ugh1x = DDold;
@@ -1268,8 +1272,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   *cplane = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = x*3 + i*rotRowBytes;
 				  //////if (rotStereoType == 2) rotBitMapData[pos+1] = 255*colDepth;
 				  //////else rotBitMapData[pos+2] = 255*colDepth;
                    //*(base + x+Lrb*i) = bytecol;
@@ -1299,8 +1303,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   cplane[i] = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = i*3 + y*rotRowBytes;
 				  //////if (rotStereoType == 2) rotBitMapData[pos+1] = 255*colDepth;
 				  //////else rotBitMapData[pos+2] = 255*colDepth;
                   //*(base+Lrb*y + i) = bytecol;
@@ -1335,8 +1339,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   *cplane = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = x*3 + i*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = x*3 + i*rotRowBytes;
 				  //////if (rotStereoType == 2) rotBitMapData[pos+1] = 255*colDepth;
 				  //////else rotBitMapData[pos+2] = 255*colDepth;
                   //*(base + x+Lrb*i) = bytecol;
@@ -1369,8 +1373,8 @@ if (rotStereoType == 2 || rotStereoType == 3) {
                   cplane[i] = ughy;
                   colDepth = ((ughy-128)/128.0/10.0*9.0+1.1)/2+0.2;
                   if (colDepth > 1) colDepth = 1;
-                  RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
-                  pos = i*3 + y1*rotRowBytes;
+                  //RR = R*colDepth; GG = G*colDepth; BB = B*colDepth;
+                  //pos = i*3 + y1*rotRowBytes;
 				  //////if (rotStereoType == 2) rotBitMapData[pos+1] = 255*colDepth;
 				  //////else rotBitMapData[pos+2] = 255*colDepth;
                   //*(base + i + Lrb*y1) = bytecol;
@@ -1393,13 +1397,13 @@ if (rotStereoType == 2 || rotStereoType == 3) {
       long z;
       x = XX - (rotDotWidth >> 1);
       y = YY - (rotDotWidth >> 1);
-      R *= colDepth; G *= colDepth; B *= colDepth;
+      //R *= colDepth; G *= colDepth; B *= colDepth;
       for (j=0;j<rotDotWidth;j++,y++) 
         if(y < wHeight && y >= 0)
           for (z=wWidth*y+x,i=0;i<rotDotWidth;i++)
             if (x+i < wWidth && x+i >= 0 && DD >= zBuffer[z+i]) {
               zBuffer[z+i] = DD;
-              pos = (x+i)*3 + y*rotRowBytes;
+              //pos = (x+i)*3 + y*rotRowBytes;
 			  //////if (rotStereoType == 2) rotBitMapData[pos+1] = 255*colDepth;
 			  //////else rotBitMapData[pos+2] = 255*colDepth;
 				
