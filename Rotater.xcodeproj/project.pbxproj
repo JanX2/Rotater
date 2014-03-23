@@ -11,8 +11,8 @@
 		447113720A70D1000061BBE2 /* RotaterView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FEC453021401AD0159AF53 /* RotaterView.h */; };
 		447113730A70D1000061BBE2 /* RotWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5171B1A0229F57F01000163 /* RotWindowController.h */; };
 		447113750A70D1000061BBE2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
-		447113760A70D1000061BBE2 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
-		447113770A70D1000061BBE2 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		447113760A70D1000061BBE2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.xib */; };
+		447113770A70D1000061BBE2 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.xib */; };
 		447113780A70D1000061BBE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
 		447113790A70D1000061BBE2 /* appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5CFCFB302291D3E01000163 /* appicon.icns */; };
 		4471137A0A70D1000061BBE2 /* docicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5F83E76022BA90801E113F3 /* docicon.icns */; };
@@ -31,8 +31,8 @@
 		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MyDocument.nib; sourceTree = "<group>"; };
-		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		2A37F4B5FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		2A37F4B7FDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -128,8 +128,8 @@
 				F5F83E76022BA90801E113F3 /* docicon.icns */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
 				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
-				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
-				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.xib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.xib */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
 			);
 			name = Resources;
@@ -211,8 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				447113750A70D1000061BBE2 /* Credits.rtf in Resources */,
-				447113760A70D1000061BBE2 /* MainMenu.nib in Resources */,
-				447113770A70D1000061BBE2 /* MyDocument.nib in Resources */,
+				447113760A70D1000061BBE2 /* MainMenu.xib in Resources */,
+				447113770A70D1000061BBE2 /* MyDocument.xib in Resources */,
 				447113780A70D1000061BBE2 /* InfoPlist.strings in Resources */,
 				447113790A70D1000061BBE2 /* appicon.icns in Resources */,
 				4471137A0A70D1000061BBE2 /* docicon.icns in Resources */,
@@ -244,20 +244,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2A37F4B5FDCFA73011CA2CEA /* English */,
 			);
-			name = MyDocument.nib;
+			name = MyDocument.xib;
 			sourceTree = "<group>";
 		};
-		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2A37F4B7FDCFA73011CA2CEA /* English */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
