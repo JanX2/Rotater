@@ -157,9 +157,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4471136F0A70D0FF0061BBE2 /* Rotater (Upgraded) */ = {
+		4471136F0A70D0FF0061BBE2 /* Rotater */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 447113840A70D1000061BBE2 /* Build configuration list for PBXNativeTarget "Rotater (Upgraded)" */;
+			buildConfigurationList = 447113840A70D1000061BBE2 /* Build configuration list for PBXNativeTarget "Rotater" */;
 			buildPhases = (
 				447113700A70D1000061BBE2 /* Headers */,
 				447113740A70D1000061BBE2 /* Resources */,
@@ -170,7 +170,7 @@
 			);
 			dependencies = (
 			);
-			name = "Rotater (Upgraded)";
+			name = Rotater;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Rotater;
 			productReference = 447113890A70D1000061BBE2 /* Rotater.app */;
@@ -197,7 +197,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4471136F0A70D0FF0061BBE2 /* Rotater (Upgraded) */,
+				4471136F0A70D0FF0061BBE2 /* Rotater */,
 			);
 		};
 /* End PBXProject section */
@@ -389,7 +389,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		447113840A70D1000061BBE2 /* Build configuration list for PBXNativeTarget "Rotater (Upgraded)" */ = {
+		447113840A70D1000061BBE2 /* Build configuration list for PBXNativeTarget "Rotater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				447113850A70D1000061BBE2 /* Development */,
