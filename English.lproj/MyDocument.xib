@@ -328,8 +328,8 @@
         </customView>
         <drawer preferredEdge="minX" leadingOffset="15" trailingOffset="15" id="71">
             <size key="contentSize" width="150" height="279"/>
-            <size key="minContentSize" width="150" height="0.0"/>
-            <size key="maxContentSize" width="150" height="0.0"/>
+            <size key="minContentSize" width="150" height="100"/>
+            <size key="maxContentSize" width="150" height="10000"/>
             <connections>
                 <outlet property="contentView" destination="69" id="233"/>
                 <outlet property="parentWindow" destination="5" id="73"/>
