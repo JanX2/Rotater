@@ -6,92 +6,7 @@
 	objectVersion = 42;
 	objects = {
 
-/* Begin PBXApplicationTarget section */
-		2A37F4C6FDCFA73011CA2CEA /* Rotater */ = {
-			isa = PBXApplicationTarget;
-			buildConfigurationList = 44376BB90A70C846008183AF /* Build configuration list for PBXApplicationTarget "Rotater" */;
-			buildPhases = (
-				2A37F4C7FDCFA73011CA2CEA /* Headers */,
-				2A37F4C9FDCFA73011CA2CEA /* Resources */,
-				2A37F4CEFDCFA73011CA2CEA /* Sources */,
-				2A37F4D1FDCFA73011CA2CEA /* Frameworks */,
-			);
-			dependencies = (
-			);
-			name = Rotater;
-			productInstallPath = "$(HOME)/Applications";
-			productName = Rotater;
-			productReference = 1758732AFF379DA111CA2CBB /* Rotater.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleDocumentTypes</key>
-	<array>
-		<dict>
-			<key>CFBundleTypeExtensions</key>
-			<array>
-				<string>rot</string>
-			</array>
-			<key>CFBundleTypeIconFile</key>
-			<string>docicon.icns</string>
-			<key>CFBundleTypeMIMETypes</key>
-			<array>
-				<string>text/rot</string>
-			</array>
-			<key>CFBundleTypeName</key>
-			<string>Rotater Document</string>
-			<key>CFBundleTypeOSTypes</key>
-			<array>
-				<string>TEXT</string>
-			</array>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>NSDocumentClass</key>
-			<string>MyDocument</string>
-		</dict>
-	</array>
-	<key>CFBundleExecutable</key>
-	<string>Rotater</string>
-	<key>CFBundleGetInfoString</key>
-	<string>5.2</string>
-	<key>CFBundleIconFile</key>
-	<string>appicon.icns</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.kloeden.rotater</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>Rotater</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>5.2</string>
-	<key>CFBundleSignature</key>
-	<string>KrOt</string>
-	<key>CFBundleVersion</key>
-	<string>5.2</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-</dict>
-</plist>
-";
-		};
-/* End PBXApplicationTarget section */
-
 /* Begin PBXBuildFile section */
-		080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
-		080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
-		080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
-		089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
-		1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
-		2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */; };
-		2A37F4CFFDCFA73011CA2CEA /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
-		2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		447113710A70D1000061BBE2 /* MyDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */; };
 		447113720A70D1000061BBE2 /* RotaterView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FEC453021401AD0159AF53 /* RotaterView.h */; };
 		447113730A70D1000061BBE2 /* RotWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5171B1A0229F57F01000163 /* RotWindowController.h */; };
@@ -108,20 +23,11 @@
 		447113810A70D1000061BBE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		447113820A70D1000061BBE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
 		447113830A70D1000061BBE2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
-		447967B70826583700BC9D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */; };
-		447967B80826583900BC9D8D /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */; };
-		F5171B1C0229F57F01000163 /* RotWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F5171B1A0229F57F01000163 /* RotWindowController.h */; };
-		F5171B1D0229F57F01000163 /* RotWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5171B1B0229F57F01000163 /* RotWindowController.m */; };
-		F5CFCFB402291D3E01000163 /* appicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5CFCFB302291D3E01000163 /* appicon.icns */; };
-		F5F83E77022BA90801E113F3 /* docicon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F5F83E76022BA90801E113F3 /* docicon.icns */; };
-		F5FEC455021401AD0159AF53 /* RotaterView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FEC453021401AD0159AF53 /* RotaterView.h */; };
-		F5FEC456021401AD0159AF53 /* RotaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FEC454021401AD0159AF53 /* RotaterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		089C1660FE840EACC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1758732AFF379DA111CA2CBB /* Rotater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Rotater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
 		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
 		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -141,16 +47,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A37F4D1FDCFA73011CA2CEA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1058C7A9FEA54F5311CA2CBB /* Cocoa.framework in Frameworks */,
-				447967B70826583700BC9D8D /* Foundation.framework in Frameworks */,
-				447967B80826583900BC9D8D /* AppKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		447113800A70D1000061BBE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,7 +80,6 @@
 		19C28FB0FE9D524F11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1758732AFF379DA111CA2CBB /* Rotater.app */,
 				447113890A70D1000061BBE2 /* Rotater.app */,
 			);
 			name = Products;
@@ -249,16 +144,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2A37F4C7FDCFA73011CA2CEA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A37F4C8FDCFA73011CA2CEA /* MyDocument.h in Headers */,
-				F5FEC455021401AD0159AF53 /* RotaterView.h in Headers */,
-				F5171B1C0229F57F01000163 /* RotWindowController.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		447113700A70D1000061BBE2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,25 +198,11 @@
 			projectRoot = "";
 			targets = (
 				4471136F0A70D0FF0061BBE2 /* Rotater (Upgraded) */,
-				2A37F4C6FDCFA73011CA2CEA /* Rotater */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2A37F4C9FDCFA73011CA2CEA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				080E96D9FE201CDB7F000001 /* Credits.rtf in Resources */,
-				080E96DAFE201CDB7F000001 /* MainMenu.nib in Resources */,
-				080E96DBFE201CDB7F000001 /* MyDocument.nib in Resources */,
-				089C1661FE840EACC02AAC07 /* InfoPlist.strings in Resources */,
-				F5CFCFB402291D3E01000163 /* appicon.icns in Resources */,
-				F5F83E77022BA90801E113F3 /* docicon.icns in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		447113740A70D1000061BBE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,17 +219,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A37F4CEFDCFA73011CA2CEA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A37F4CFFDCFA73011CA2CEA /* MyDocument.m in Sources */,
-				2A37F4D0FDCFA73011CA2CEA /* main.m in Sources */,
-				F5FEC456021401AD0159AF53 /* RotaterView.m in Sources */,
-				F5171B1D0229F57F01000163 /* RotWindowController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4471137B0A70D1000061BBE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -408,85 +268,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		44376BBA0A70C846008183AF /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DEBUGGING_SYMBOLS = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = Rotater;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		44376BBB0A70C846008183AF /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				DEBUGGING_SYMBOLS = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = Rotater;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-		44376BBC0A70C846008183AF /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUGGING_SYMBOLS = NO;
-				FRAMEWORK_SEARCH_PATHS = "";
-				GCC_OPTIMIZATION_LEVEL = 3;
-				HEADER_SEARCH_PATHS = "";
-				INSTALL_PATH = "$(HOME)/Applications";
-				JAVA_COMPILER_DEBUGGING_SYMBOLS = NO;
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				PRODUCT_NAME = Rotater;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
-		};
 		44376BBE0A70C846008183AF /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -598,16 +379,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44376BB90A70C846008183AF /* Build configuration list for PBXApplicationTarget "Rotater" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				44376BBA0A70C846008183AF /* Development */,
-				44376BBB0A70C846008183AF /* Deployment */,
-				44376BBC0A70C846008183AF /* Default */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Default;
-		};
 		44376BBD0A70C846008183AF /* Build configuration list for PBXProject "Rotater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
