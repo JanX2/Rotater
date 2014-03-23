@@ -56,14 +56,14 @@
   zBuffer = (Byte *) NSZoneCalloc(nil, zBuffSize, 1);
 
 	
-	rotBitMap = [[NSBitmapImageRep allocWithZone:[self zone]] initWithBitmapDataPlanes:NULL
+	rotBitMap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL
     pixelsWide:viewBounds.size.width
     pixelsHigh:viewBounds.size.height
     bitsPerSample:8
     samplesPerPixel:3
     hasAlpha:NO
     isPlanar:NO
-    colorSpaceName:[[NSString alloc]initWithCString:"NSDeviceRGBColorSpace"]
+    colorSpaceName:@"NSDeviceRGBColorSpace"
     bytesPerRow:rotRowBytes //rotRowBytes
     bitsPerPixel:24];
 	
@@ -1427,8 +1427,6 @@ if (rotStereoType == 2 || rotStereoType == 3) {
 	[rotImage drawAtPoint:zero fromRect:viewBounds operation:NSCompositeCopy fraction:1];
 	[[NSGraphicsContext currentContext] restoreGraphicsState];
 	
-  [rotImage release];
-  [rotBitMap release];
   NSZoneFree(nil, zBuffer);
   
   if (rotFPS) {
@@ -1709,7 +1707,7 @@ if (rotStereoType == 2 || rotStereoType == 3) {
 //######################################################################################//
 
 - (id)initWithFrame:(NSRect)frame {
-  [super initWithFrame:frame];
+  if (!(self = [super initWithFrame:frame]))  return nil;
   aM=1; bM=0; cM=0; dM=0; eM=1; fM=0; gM=0; hM=0; iM=1;
   AN=1; BN=0; CN=0; DN=0; EN=1; FN=0; GN=0; HN=0; IN=1;
   backX=0; backY=0; backZ=0;
@@ -1762,10 +1760,11 @@ if (rotStereoType == 2 || rotStereoType == 3) {
 
 //######################################################################################//
 
+/*
 - (void)dealloc {
   //backrotateme = NO; // somewhere else??
-  [super dealloc];
 }
+*/
 
 //######################################################################################//
 

@@ -119,7 +119,7 @@
 //######################################################################################//
 
 - (id)init {
-  [super init];
+  if (!(self = [super init]))  return nil;
   numPoints = 0;
   //thePoints = (struct pointArray *) malloc(10000000); // Fix Me
   maxPoints = RotBlockSize;
@@ -131,7 +131,6 @@
 
 - (void)dealloc {
   NSZoneFree(nil, thePoints);
-  [super dealloc];
 }
 
 //- (NSString *)windowNibName {
@@ -141,7 +140,7 @@
 //######################################################################################//
 
 - (void)makeWindowControllers {
-  rotController = [[RotWindowController allocWithZone:[self zone]] init];
+  rotController = [[RotWindowController alloc] init];
   [self addWindowController:rotController];
   [rotController setDocument:self];
 }
