@@ -36,7 +36,7 @@
 		2A37F4BAFDCFA73011CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		447113880A70D1000061BBE2 /* Info-Rotater__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Rotater__Upgraded_.plist"; sourceTree = "<group>"; };
+		447113880A70D1000061BBE2 /* Info-Rotater.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Rotater.plist"; sourceTree = "<group>"; };
 		447113890A70D1000061BBE2 /* Rotater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rotater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5171B1A0229F57F01000163 /* RotWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RotWindowController.h; sourceTree = "<group>"; };
 		F5171B1B0229F57F01000163 /* RotWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = RotWindowController.m; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				2A37F4B8FDCFA73011CA2CEA /* Resources */,
 				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
 				19C28FB0FE9D524F11CA2CBB /* Products */,
-				447113880A70D1000061BBE2 /* Info-Rotater__Upgraded_.plist */,
+				447113880A70D1000061BBE2 /* Info-Rotater.plist */,
 			);
 			name = Rotater;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-Rotater__Upgraded_.plist";
+				INFOPLIST_FILE = "Info-Rotater.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = YES;
@@ -335,7 +335,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-Rotater__Upgraded_.plist";
+				INFOPLIST_FILE = "Info-Rotater.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				ONLY_ACTIVE_ARCH = NO;
@@ -360,7 +360,7 @@
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
-				INFOPLIST_FILE = "Info-Rotater__Upgraded_.plist";
+				INFOPLIST_FILE = "Info-Rotater.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "";
