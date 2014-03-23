@@ -5,7 +5,6 @@
 //######################################################################################//
 
 // Feel free to use bits of this this code for what it is worth
-// I retain Copyright on the whole
 // Hey I am just learning this stuff so give me a break :-)
 
 // Craig Kloeden 13 March 2002 <craig@kloeden.net>
