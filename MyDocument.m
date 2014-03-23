@@ -154,9 +154,9 @@
   NSZoneFree(nil, thePoints);
 }
 
-//- (NSString *)windowNibName {
-//  return @"MyDocument";
-//}
+- (NSString *)windowNibName {
+  return @"MyDocument";
+}
 
 //######################################################################################//
 
