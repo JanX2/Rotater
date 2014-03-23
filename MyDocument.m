@@ -124,8 +124,6 @@
   if ( fileContents != nil ) {
     [textView setString:fileContents];
     [self updatepoints:self];
-    //[fileContents release];
-    // deallocate fileContents here ??
   }
 }
 
