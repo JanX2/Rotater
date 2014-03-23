@@ -14,7 +14,7 @@
 //######################################################################################//
 
 - (void)scanText:(NSString *)string {
-  NSCharacterSet *endoflineSet, *skipSet;
+  NSCharacterSet *endoflineSet/*, *skipSet*/;
   NSScanner *theScanner, *lineScanner;
   NSString *aLine = @"nuffin";
   double X = 0, Y, Z;
@@ -24,8 +24,8 @@
   double maybe;
   
   numPoints = 0;
-  endoflineSet = [NSCharacterSet characterSetWithCharactersInString:@"\r\n"];
-  skipSet = [NSCharacterSet characterSetWithCharactersInString:@"\r\n"];
+  endoflineSet = [NSCharacterSet newlineCharacterSet];
+  //skipSet = [NSCharacterSet newlineCharacterSet];
   theScanner = [NSScanner scannerWithString:string];
   //[theScanner setCharactersToBeSkipped:skipSet];
   while ([theScanner isAtEnd] == NO) {
@@ -85,7 +85,7 @@
       if (maybe > midZoom) midZoom = maybe;
     }
   }
-  else max = 1;
+  //else  max = 1;
   if (midZoom == 0) midZoom = 1;
   [rotView updateRotaterViewMidX:midX midY:midY midZ:midZ midZoom:midZoom];
 }
