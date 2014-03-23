@@ -63,7 +63,7 @@
     samplesPerPixel:3
     hasAlpha:NO
     isPlanar:NO
-    colorSpaceName:@"NSDeviceRGBColorSpace"
+    colorSpaceName:NSDeviceRGBColorSpace
     bytesPerRow:rotRowBytes //rotRowBytes
     bitsPerPixel:24];
 	
